@@ -6,7 +6,8 @@ RUN apt-get -qq update && apt-get install -y --force-yes \
     software-properties-common \
     python-software-properties \
     python-pip \
-    python3-pip
+    python3-pip \
+    git
 
 # standard scientific packages
 RUN pip install cython

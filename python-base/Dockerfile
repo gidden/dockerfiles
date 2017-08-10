@@ -8,9 +8,7 @@ RUN apt-get -qq update && apt-get install -y --force-yes \
     python-pip \
     python3-pip
 
-RUN pip install argparse
-RUN pip3 install argparse
-
+# standard scientific packages
 RUN pip install cython
 RUN pip3 install cython
 
@@ -23,8 +21,16 @@ RUN pip3 install scipy
 RUN pip install pandas
 RUN pip3 install pandas
 
-RUN pip install pytest
-RUN pip3 install pytest
+# plotting
+RUN pip install matplotlib
+RUN pip3 install matplotlib
+
+RUN pip install seaborn
+RUN pip3 install seaborn
+
+# utils
+RUN pip install argparse
+RUN pip3 install argparse
 
 RUN pip install pyyaml
 RUN pip3 install pyyaml
@@ -34,6 +40,10 @@ RUN pip3 install xlrd
 
 RUN pip install xlsxwriter
 RUN pip3 install xlsxwriter
+
+# testing
+RUN pip install pytest
+RUN pip3 install pytest
 
 RUN pip install python-coveralls
 RUN pip3 install python-coveralls

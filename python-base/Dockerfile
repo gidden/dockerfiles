@@ -22,13 +22,6 @@ RUN pip3 install scipy
 RUN pip install pandas
 RUN pip3 install pandas
 
-# plotting
-RUN pip install matplotlib
-RUN pip3 install matplotlib
-
-RUN pip install seaborn
-RUN pip3 install seaborn
-
 # utils
 RUN pip install argparse
 RUN pip3 install argparse

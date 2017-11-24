@@ -11,6 +11,6 @@ RUN wget https://www.coin-or.org/download/binary/Ipopt/Ipopt-3.7.1-linux-x86_64-
     tar xvf Ipopt-3.7.1-linux-x86_64-gcc4.3.2.tgz && \
     cp Ipopt-3.7.1-linux-x86_64-gcc4.3.2/bin/ipopt /usr/local/bin/
 
-RUN pip install pyomo
+RUN pip2 install pyomo
 RUN pip3 install pyomo
 

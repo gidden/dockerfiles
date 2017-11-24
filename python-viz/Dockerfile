@@ -6,8 +6,8 @@ RUN apt-get -qq update && apt-get install -y --force-yes \
     python3-tk
 
 # plotting
-RUN pip install matplotlib
+RUN pip2 install matplotlib
 RUN pip3 install matplotlib
 
-RUN pip install seaborn
+RUN pip2 install seaborn
 RUN pip3 install seaborn

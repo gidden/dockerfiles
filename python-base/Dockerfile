@@ -50,3 +50,6 @@ RUN pip3 install python-coveralls
 
 RUN pip2 install pytest-cov
 RUN pip3 install pytest-cov
+
+RUN pip2 install jupyter
+RUN pip3 install jupyter

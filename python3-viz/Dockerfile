@@ -8,3 +8,6 @@ RUN apt-get -qq update && apt-get install -y --force-yes \
 RUN pip3 install matplotlib
 
 RUN pip3 install seaborn
+
+# testing
+RUN pip3 install pytest-mpl
